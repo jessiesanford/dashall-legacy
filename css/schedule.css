@@ -1,0 +1,63 @@
+.calendar_row {
+	background: #f0f0f0;
+    display: flex !important;
+    flex-flow: row no-wrap;
+    align-items: center;
+}
+
+.calendar_head_cell {
+	background: #000;
+	width: 14%;
+	padding: 10px;
+}
+
+.calendar_day {
+	background: #fff;
+	width: 14%;
+	padding: 10px;
+	margin: 2px;
+}
+
+.calendar_shift {
+	background: #d53030;
+	height: 80px;
+	margin: 5px 0px;
+	padding: 10px;
+	border-radius: 2px;
+	color: #fff;
+	font-weight: 300;
+	cursor: pointer;
+}
+
+.calendar_shift.unassigned {
+	font-weight: 300;
+}
+
+.calendar_shift.shift_assigned {
+	background: #808080;
+	color: #c0c0c0;
+	cursor: default;
+}
+
+.calendar_shift.shift_self {
+	background: #1b9721;
+	color: #fff;
+}
+
+.calendar_legend {
+	height: auto !important;
+}
+
+.shift_unavailable {
+	background: #fafafa;
+	color: #a0a0a0;
+}
+
+.shift_pending {
+	opacity: 0.4;
+}
+
+.active_day {
+	color: #ffe300;
+}
+

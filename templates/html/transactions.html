@@ -1,0 +1,34 @@
+<script id="transaction_row" type="text/html">
+	<div class="trans_row">
+		<div class="row trans_summary" data="{{order_id}}">
+			<div class="cell wid_10">{{order_id}}</div>
+			<div class="trans_date cell wid_25" data="">{{init_time}}</div>
+			<div class="trans_user cell wid_20" data-repeat_customer="">
+				{{#repeat_customer}}
+					<i class="fa fa-refresh push_right"></i>
+				{{/repeat_customer}}
+				{{user_firstName}} {{user_lastName}}
+			</div>
+			<div class="trans_promo cell wid_20" data="">{{promo}}</div>
+			<div class="trans_amount cell cell_right align_right wid_20 strong" data="">{{profit}}</div>
+		</div>
+		<div class="trans_info">
+			<div class="row no_border tcat">
+				<div class="cell wid_20">Order Amount</div>
+				<div class="cell wid_20">Delivery Fee</div>
+				<div class="cell wid_20">Tip</div>
+				<div class="cell wid_20">Discount</div>
+				<div class="cell wid_20">Strip Cut</div>
+				<div class="cell cell_right align_right wid_20">Revenue</div>
+			</div>
+			<div class="row row_alt">
+				<div class="cell wid_20">{{amount}}</div>
+				<div class="cell wid_20">{{delivery_fee}}</div>
+				<div class="cell wid_20">{{tip}}</div>
+				<div class="cell wid_20">{{discount_amount}}</div>
+				<div class="cell wid_20">{{stripe_cut}}</div>
+				<div class="cell cell_right align_right wid_20">{{revenue}}</div>
+			</div>
+		</div>
+	</div>
+</script>

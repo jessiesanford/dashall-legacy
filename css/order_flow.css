@@ -1,0 +1,175 @@
+/* the main index box */
+
+#order_flow {
+	position: relative;
+	padding: 60px 0;
+}
+
+#slogan_line1 {
+	margin-bottom: 10px;
+	font-size: 18px;
+}
+
+#slogan_line2 {
+	margin-bottom: 10px;
+	font-size: 30px;
+	font-weight: 500;
+}
+
+#current_location {
+	margin-bottom: 20px;
+	font-size: 18px;
+	font-weight: 500;
+}
+
+#dashbox_wrap {
+	background: #fff;
+	width: 60px;
+	min-width: 900px;
+	margin: auto;
+	padding: 20px;
+	box-shadow: 0px 0px 12px rgba(0,0,0,0.25);
+}
+
+form#dashbox {
+	background: rgba(0,0,0,0.2);
+	width: 400px;
+	margin: auto;
+	padding: 10px;
+}
+
+.dashbox_textbox_wrap {
+	position: relative;
+	text-align: center;
+}
+
+#dashbox .dashbox_textbox {
+	background: #fff;
+	width: 100%;
+	padding: 15px 10px;
+	border: 2px solid #fff;
+	border-radius: 2px;
+	box-sizing: border-box;
+	font-family: 'Montserrat', arial, sans-serif;
+	font-size: 18px;
+	font-weight: 300;
+	text-align: center;
+}
+
+#dashbox .dashbox_textbox:focus {
+	box-shadow: inset 0px 0px 7px rgba(0,0,0,0.6);
+}
+
+#dashbox .dashbox_textbox::-webkit-input-placeholder {
+   	color: #a0a0a0;  
+}
+
+#dashbox .dashbox_textbox:-moz-placeholder { /* Firefox 18- */
+   	color: #a0a0a0;  
+}
+
+#dashbox .dashbox_textbox::-moz-placeholder {  /* Firefox 19+ */
+   	color: #a0a0a0;  
+}
+
+#dashbox .dashbox_textbox:-ms-input-placeholder {  
+   	color: #a0a0a0;  
+}
+
+#dashbox #dashbox_button {
+	display: block;
+	background: #d53030;
+	min-width: 160px;
+	margin: auto;
+	padding: 15px 30px;
+	border: 2px solid #d53030;
+	border-radius: 2px;
+	font-family: 'Montserrat', arial, sans-serif;
+	font-size: 18px;
+}
+
+#dashbox #dashbox_button:hover {
+	background: #fff;
+	border-color: #fff;
+	color: #d53030 !important;
+}
+
+#dash_load {
+	background: #fff;
+	border-radius: 50%;
+	padding: 3px;
+	float: left;
+}
+
+#disclaimer {
+	background: rgba(0,0,0,0.5);
+	margin: 40px 0;
+	padding: 20px;
+	font-size: 12px;
+	color: #a0a0a0;
+}
+
+
+
+#autocomplete_address_wrap {
+    position: relative;
+    padding: 0px 0px 0px 20px;
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 2px;
+}
+
+#autocomplete_address_wrap:before {
+    position: absolute;
+    top: 1px;
+    left: 10px;
+    content: "\f041";
+    font-family: 'FontAwesome';
+    font-size: 24px;
+    color: #d53030;
+}
+
+input#address_autocomplete {
+    background: transparent;
+    border: 0;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', arial, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+
+.select_area {
+	max-width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+}
+
+.select_box {
+	background: #f0f0f0;
+	border: 1px solid #e0e0e0;
+	margin: 5px 0;
+	padding: 10px;
+	border-radius: 2px;
+	cursor: pointer;
+}
+
+.select_box_title {
+	font-weight: 400;
+}
+
+.select_box_content {
+	display: none;
+}
+
+.select_box.selected {
+	background: #d53030;
+	border: 1px solid #d53030;
+	color: #fff;
+}
+
+.select_box.selected .select_box_content {
+	display: block;
+}

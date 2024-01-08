@@ -1,0 +1,75 @@
+@keyframes changewidth {
+	from {
+		opacity: 0.4;
+		filter: alpha(opacity=40);
+	}
+}
+
+#os_AWD,
+#os_AWD_S2, 
+#os_AWD_S3 {
+	background: #FFE14C;
+}
+
+#os_PDR,
+#os_APP
+{
+	background: #FFE14C;
+}
+
+#os_APP,
+#os_APP_S2 {
+	background: #45A548;
+	color: #fff !important;
+}
+
+#os_APP_S3 {
+	background: #D62F2F;
+	color: #fff;
+}
+
+#os_ARR {
+	background: #28aa2b;
+	color: #fff;
+}
+
+#os_DEN,
+#os_CANC {
+	background: #000;
+	color: #fff;
+}
+
+#os_COM {
+	background: #b0ebff;
+}
+
+#os_ARCH {
+	background: #f0f0f0;
+}
+
+.order_row {
+}
+
+.order_row:hover {
+	background: #f0f0f0;
+	cursor: pointer;
+}
+
+.order_info {
+	padding: 0;
+	display: none;
+}
+
+.order_row_selected .order_summary,
+.order_row_selected .order_info {
+	background: #cdf5ff !important;
+	border-color: #cdf5ff;
+}
+
+/*this is a dupe*/
+.order_status {
+	margin: auto;
+	display: inline;
+	background: none;
+}
+

@@ -1,0 +1,9 @@
+RewriteEngine On
+DirectoryIndex index.php
+
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteRule ^user/refer/([^/]*)$ /user.php?action=register&refer=$1 [L]
+RewriteRule ^restaurants/([^/]*)$ /restaurants.php?id=$1 [L]
+RewriteRule ^user/([^/]*)$ /user.php?action=$1 [L]
+RewriteRule ^([^\.]+)$ $1.php [NC,L]

@@ -1,0 +1,407 @@
+/* ==============================================
+DYNAXEL CSS FILE 
+CORE.CSS
+Last Updated: 04/22/12 
+_ _ _ _ _
+Author: Jessie Sanford
+=============================================== */
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend
+,table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video 
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+article, aside, details, figcaption, figure, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+html {
+	overflow-y: scroll;	
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	padding-bottom: 20px;
+	font-weight: 500;
+}
+
+h6 {
+	font-size: 11px;
+}
+
+h5 {
+	font-size: 12px;
+}
+
+h4 {
+	font-size: 16px;
+}
+
+h3 {
+	font-size: 20px;
+}
+
+h2 {
+	font-size: 24px;
+}
+
+h1 {
+	font-size: 36px;
+	line-height: 1;
+}
+
+p {	
+	margin-bottom: 20px;
+	font-weight: 300;
+}
+
+blockquote {
+	background: url(../images/icons/blockquote.png) no-repeat;
+	background-position: 10px 14px;
+	margin: 0;
+	padding: 10px 0px 10px 50px;
+	color: #606060;
+	font-style: italic;
+}
+ 
+ul, ol {
+	list-style-type: circle;
+	list-style-position: inside;
+}
+
+li {
+	margin: 5px 0px;
+	padding: 0;
+}
+
+form {
+	display: block;
+	clear: both;
+	margin: 0;
+	padding: 0;
+}
+
+fieldset {
+	margin: 10px 0px;
+	padding: 20px;
+	border: 1px solid #e0e0e0;
+}
+
+fieldset legend {
+	background: #f6f6f6;
+	padding: 5px 10px;
+	color: #606060;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+hr {
+	background: #e0e0e0;
+	clear: both;
+	display: block;
+	height: 1px;
+	margin: 20px 0px;
+	border: 0;
+}
+
+hr.lrg {
+	margin: 40px;
+}
+
+hr.sep {
+	background: #eaeaea;
+	width: 960px;
+	clear: both;
+	display: block;
+	height: 1px;
+	margin: 0px auto;
+	border: 0;
+}
+
+hr.hidden {
+	background: none;
+	border: 1px solid transparent;
+	margin: 10px 0px;
+}
+
+table {
+	width: 100%;
+	border: 1px solid #404040;
+	border-spacing: 1px;
+	border-collapse: collapse;
+}	
+
+thead {
+	background: #f0f0f0;
+	color: #606060;
+}
+
+tfoot {
+	background: #f0f0f0;
+	color: #606060;
+}
+
+th {
+	padding: 10px;
+}
+
+td {
+	padding: 10px;
+}
+
+td.grey {
+	background: #f0f0f0;
+}
+
+strong {
+	font-weight: 500;
+}
+
+select {
+	background: #fff;
+	margin: 2px 0px;
+	padding: 5px;
+	border: 0;
+	border-radius: 2px;
+	-moz_border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-khtml-border-radius: 2px;
+}
+
+select:focus {
+	outline: none;
+	color: #606060;
+}
+
+.hidden {
+	display: none !important;
+}
+
+.largetext  {
+	font-size: 18px;
+}
+
+.mediumtext {
+	font-size: 14px;
+}
+
+.smalltext {
+	font-size: 10px;
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.clear {
+	clear: both;
+}
+
+.valign_middle {
+	vertical-align: middle;
+}
+
+.align_left {
+	text-align: left;
+}
+
+.align_right {
+	text-align: right;
+}
+
+.align_center {
+	text-align: center;
+}
+
+.float_right {
+	float: right;
+}
+
+.float_left {
+	float: left;
+}
+
+.pos_left {
+	left: 0;
+}
+
+.pos_right {
+	right: 0;
+}
+
+.pos_middle {
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+.no_border {
+	border: none !important;
+}
+
+.row 
+{
+    display: flex !important;
+    flex-flow: row no-wrap;
+    align-items: center;
+    border-bottom: 1px solid #f0f0f0;
+}
+
+.row.row_alt {
+	border-bottom: 2px solid #000;
+}
+
+.row.row_selected {
+	background: #f0f0f0;
+}
+
+.row.row_error {
+	background: #ffe4e4;
+	border-color: #ffbcbc;
+}
+
+.row.row_highlight {
+	background: #fff7c8;
+	border-color: #ffea6f;
+}
+
+.row.row_center {
+	justify-content: center;
+}
+
+.row.row_baseline {
+    align-items: baseline;
+}
+
+.cell {
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.cell_grow {
+    flex-grow: 1;
+}
+
+.cell_right {
+    margin-left: auto;
+}
+
+.wid_5 {
+	width: 5%;
+}
+
+.wid_10 {
+	width: 10%;
+}
+
+.wid_15 {
+	width: 15%;
+}
+
+.wid_20 {
+	width: 20%;
+}
+
+.wid_25 {
+	width: 25%;
+}
+
+.wid_30 {
+	width: 30%;
+}
+
+.wid_40 {
+	width: 40%;
+}
+
+.wid_50 {
+	width: 50%;
+}
+
+.wid_60 {
+	width: 60%;
+}
+
+.wid_70 {
+	width: 70%;
+}
+
+.wid_80 {
+	width: 80%;
+}
+
+.wid_90 {
+	width: 90%;
+}
+
+.wid_100 {
+	width: 100%;
+}
+
+.push_top {
+	margin-top: 10px;
+}
+
+.push_top_20 {
+	margin-top: 20px;
+}
+
+.push_top_40 {
+	margin-top: 40px !important;
+}
+
+.push_bottom {
+	margin-bottom: 10px;
+}
+
+.push_bottom_20 {
+	margin-bottom: 20px;
+}
+
+.push_bottom_40 {
+	margin-bottom: 40px !important;
+}
+
+.push_left {
+	margin-left: 10px;
+}
+
+.push_right {
+	margin-right: 10px;
+}
+
+.no_push  {
+	margin: 0 !important;
+}
+
+.no_padd {
+	padding: 0 !important;
+}
+
+.padd_5 {
+	padding: 5px;
+}

@@ -1,0 +1,182 @@
+/* @media only screen and (min-device-width : 300px) and (max-device-width : 600px) {*/
+@media only screen and (max-width: 800px) {
+
+.resp_hide {
+	display: none !important;
+}
+.resp_show {
+	display: inherit;
+}
+
+.notice {
+	font-size: 14px;
+}
+
+.popup {
+	position: fixed;
+	top: auto;
+	bottom: 0;
+	width: 100%;
+	box-sizing: border-box;
+	text-align: center;
+	border-radius: 0px;
+}
+
+.wrap {
+	width: 100%;	
+}
+
+#bridge {
+	height: auto;
+	text-align:center;
+}
+
+#showcase {
+	height: 420px;
+}
+
+.showcase_heading {
+	font-size: 18px;
+}
+
+.showcase_button {
+	padding: 15px 20px;
+}
+
+.button_devider {
+	display: block;
+	margin: 10px 0px;
+}
+
+#user_panel {
+	float: none;
+}
+
+#order_flow {
+	padding: 0;
+}
+
+#dashbox_wrap {
+	min-width: 100%;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+form#dashbox {
+	width: 100%;
+	box-sizing: border-box;
+}
+
+#dashbox .dashbox_textbox {
+	width: 100%;
+	padding: 10px;
+	font-size: 14px;
+}
+
+#dashbox_button {
+	width: 100%;
+}
+
+.resp_expand {
+	width: 100%;
+}
+
+#content {
+	width: 95%;
+}
+
+#footer {
+	height: auto;
+	text-align: center;
+}
+
+ul.footer_menu li {
+	display: block;
+	margin: 0px;
+}
+
+.copyright {
+	text-align: center;
+}
+
+.order_status {
+	width: 90%;
+}
+
+.copyright {
+	float: none;
+	display: block;
+}
+
+.page_heading {
+	text-align: center;
+}
+
+.col {
+	width: 100% !important;
+	margin-bottom: 20px;
+}
+
+input.textbox,
+textarea {
+	width: 100%;
+	padding: 15px 5px;
+}
+
+input {
+	margin: 2px 0px;
+}
+
+} /* END MEDIA QUERY */
+
+@media only screen and (max-width: 600px) {
+
+.row_collapse {
+	display: block !important;
+}
+
+.row_collapse .wid_5, 
+.row_collapse .wid_10, 
+.row_collapse .wid_15, 
+.row_collapse .wid_20, 
+.row_collapse .wid_25, 
+.row_collapse .wid_30, 
+.row_collapse .wid_40, 
+.row_collapse .wid_50, 
+.row_collapse .wid_60, 
+.row_collapse .wid_70, 
+.row_collapse .wid_80, 
+.row_collapse .wid_90, 
+.row_collapse .wid_100
+{
+		width: auto;
+}
+
+#model {
+	width: 95%;
+	overflow-y: scroll;
+}
+
+#model.stick_top {
+	top: 20px !important;
+}
+
+.estab .info .desc {
+	font-size:12px;
+}
+
+.calendar_day {
+
+	width: auto;
+}
+
+.calendar_shift {
+	cursor: pointer;
+	height: auto;
+}
+
+
+
+} /* END MEDIA QUERY */
+
+

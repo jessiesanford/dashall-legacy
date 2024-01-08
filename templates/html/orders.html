@@ -1,0 +1,42 @@
+<script id="order_row" type="text/html">
+					<div class="order_row">
+						<div class="row order_summary" data="{{order_id}}">
+
+							<div class="cell wid_10">{{order_id}}</div>
+
+							<div class="cell wid_10">
+								<span id="os_{{order_status}}" class="order_status">{{order_status}}</span>
+							</div>
+
+							<div class="cell wid_10">
+								 {{order_location}} 
+							</div>
+
+							<div class="cell wid_20">
+								{{init_time}}
+							</div>
+							<div class="order_customer cell wid_20">
+								<a href="admin?module=customer&id={{user_id}}">{{user_firstName}} {{user_lastName}}</a>
+							</div>
+							<div class="order_address cell wid_20">
+							 {{address_street}}
+							</div>
+						</div>
+						<div class="order_info">
+							<div class="row no_border tcat">
+								<div class="cell wid_30">Order Desc</div>
+								<div class="cell cell_right align_right wid_20">Complete Time</div>
+							</div>
+							<div class="row row_alt">
+								<div class="cell wid_30">
+									 {{order_desc}} 
+								</div>
+								<div class="cell cell_right align_right wid_20">
+									{{elapsed}}
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+</script>

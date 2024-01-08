@@ -1,0 +1,88 @@
+#admin_sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 220px;
+    padding: 20px;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+    background: #000;
+    z-index: 9999;
+    color: #fff;
+}
+
+#admin_sidebar_push {
+	margin-left: 220px;
+}
+
+#admin_content {
+	padding: 20px;
+}
+
+#user_panel {
+	float: none;
+	background: #fff;
+	padding: 10px 20px;
+}
+
+#trans_sidebar {
+    position: relative;
+    width: 300px;
+    float: right;
+}
+
+#trans_sidebar_content {
+    position: absolute;
+    right: 0;
+    width: 100%;
+}
+
+#trans_sidebar_inverse {
+    margin-right: 340px;
+}
+
+.trans_row:hover {
+    background: #f0f0f0;
+    cursor: pointer;
+}
+
+.trans_row_selected .trans_summary,
+.trans_row_selected .trans_info {
+    background: #cdf5ff !important;
+    border-color: #cdf5ff;
+}
+
+.trans_info {
+    display: none;
+}
+
+.payroll_row_selected {
+    background: #fffbb9 !important;
+    border-color: #fff000;
+}
+
+.payroll_row_flag {
+    background: #ffd1d1 !important;
+    border-bottom: 1px solid #ffa5a5;
+}
+
+
+.stat_big {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+
+/* @media only screen and (min-device-width : 300px) and (max-device-width : 600px) {*/
+@media only screen and (max-width: 800px) {
+
+#admin_sidebar{
+    width: 100px;
+}
+
+#admin_sidebar_push {
+    margin-left: 100px;
+}
+}
